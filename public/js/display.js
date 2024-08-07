@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const resultElement = document.getElementById('result');
     const historyElement = document.getElementById('history');
-    const socket = new WebSocket('ws://DESKTOP-T29DT8H:8080');
+    const socket = new WebSocket('ws://localhost:8080');
 
     const MAX_HISTORY = 10; // Maximum number of dice rolls to display
 
