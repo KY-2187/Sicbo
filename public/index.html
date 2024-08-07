@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicbo Main Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <img class="diceLogo" src="/assets/images/dice_3D_detailed.svg">
+    <div class="homePageTitle">SIC BO</div>
+    <div class="buttonContainer">
+        <div class="homeButton" onclick="openDealerWindow()">Dealer</div>
+        <div class="homeButton" onclick="openDisplayWindow()">Display</div>
+    </div>
+    
+    <script>
+        function openDealerWindow() {
+            window.open('dealer.html','_blank');
+        }
+
+        function openDisplayWindow() {
+            window.open('display.html', '_blank');
+        }
+    </script>
+</body>
+</html>

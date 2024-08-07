@@ -1,0 +1,198 @@
+:root {
+    --main-color: #5e6472;
+    --violet: #2e294e;
+    --red: #9b2226;
+    --yellow: #af7c30;
+    --green: #335c67;
+}
+
+@font-face {
+    font-family: 'MickeyFont';
+    src: url('/assets/fonts/WickedMouse-aGoK.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+h1, h2 {
+    font-family: "Jetbrains Mono", monospace;
+    color: var(--violet);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li div {
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 5vh;
+    
+}
+
+/*
+.resultListContainer div {
+    white-space: nowrap; 
+    width: 5vh; 
+    width: 15vw; 
+    max-width: 80px; 
+    align-items: center; 
+    justify-content: center; 
+}*/
+
+
+.homePageTitle {
+    font-family: 'MickeyFont', sans-serif;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 
+        0 2px 4px rgba(45, 35, 66, 0.4),
+        0 7px 13px rgba(45, 35, 66, 0.3), 
+        0 -3px 0 #D6D6E7; 
+}
+
+.diceLogo {
+    width: 8vw;
+    height: auto;
+    overflow: visible;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selectedContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultsContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.resultListContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;
+    gap: 15px;
+}
+
+/* Home Button */
+
+.homeButton {
+    margin: 20px;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 4vw; /* Responsive height */
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 0 2vw; /* Responsive padding */
+    position: relative;
+    text-align: center; /* Center text horizontally */
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 2vw; /* Responsive font size */
+}
+  
+.homeButton:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.homeButton:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.homeButton:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+/* Dice Button */
+
+.diceButton {
+    margin: 20px;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 20px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 5px 5px 7px 5px;
+    position: relative;
+    text-align: center; /* Center text horizontally */
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 2vw; /* Responsive font size */
+}
+  
+.diceButton:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.diceButton:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.diceButton:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.diceFaceImage {
+    width: 10vw;
+    height: auto;
+}
+
+.sum {
+    text-align: center;
+    min-width: 60px;
+}

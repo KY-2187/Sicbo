@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body style="background-color: #dfe7fd;">
+    <h1>Enter Dice Results</h1>
+
+    <div class="selectedContainer" id="selected-dice">
+        <h2>Selected Dice:</h2>
+        <ul id="selected-list"></ul>
+    </div>
+
+    <div class="buttonContainer" id="buttons">
+        <button data-dice="1" class="diceButton"><img class="diceFaceImage" src="/assets/images/dice_1.svg"></button>
+        <button data-dice="2" class="diceButton"><img class="diceFaceImage" src="/assets/images/dice_2.svg"></button>
+        <button data-dice="3" class="diceButton"><img class="diceFaceImage" src="/assets/images/dice_3.svg"></button>
+        <button data-dice="4" class="diceButton"><img class="diceFaceImage" src="/assets/images/dice_4.svg"></button>
+        <button data-dice="5" class="diceButton"><img class="diceFaceImage" src="/assets/images/dice_5.svg"></button>
+        <button data-dice="6" class="diceButton"><img class="diceFaceImage" src="/assets/images/dice_6.svg"></button>
+    </div>
+
+    <div id="controls">
+        <button id="erase" class="homeButton">Erase</button>
+        <button id="submit" class="homeButton">Submit</button>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
