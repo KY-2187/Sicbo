@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
             case '大 BIG':
                 return 'red';
             case '小 SMALL':
-                return 'yellow';
+                return 'blue';
             case '三':
                 return 'green';
             default:
