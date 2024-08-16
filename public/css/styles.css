@@ -189,6 +189,7 @@ li div {
 
 .diceFaceImage {
     width: 10vw;
+    max-width: 100px;
     height: auto;
 }
 
